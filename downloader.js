@@ -51,7 +51,7 @@ const get_activities = async (accessory, sessionCookie) => {
             "operator": "<=",
             "limit": 80,
             "scanDirectionNewer": true,
-            "filter": "relevanceLevel = 0 OR relevanceLevel >= 1"
+            "filter": "relevanceLevel >= 1"
         })
     }).then(response => response.json());
 
